@@ -1,6 +1,6 @@
 ---
 layout: default
-order: 1
+order: 3
 ---
 
 <!-- new slide -->
