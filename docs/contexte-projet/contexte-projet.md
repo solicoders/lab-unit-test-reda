@@ -1,7 +1,7 @@
 ---
 layout: default
 chapitre: contexte-projet
-order: 6
+order: 4.5
 ---
 
 <!-- new slide -->
