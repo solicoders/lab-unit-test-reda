@@ -69,10 +69,10 @@ Nous devons télécharger AdminLTE dans notre projet Laravel depuis le site offi
 
 <!-- new slide -->
 
-## Unit Test
+## Test unitaire
 
-![Unit Test](./images/unit-test.png){:width="700px"}
-*Unit Test*
+![Test unitaire](./images/unit-test.png){:width="700px"}
+*Test unitaire*
 
 <!-- note -->
 
