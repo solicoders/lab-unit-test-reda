@@ -7,5 +7,5 @@ order: 4
 
 # Compétences Cibles
 
-![Compétences Cibles](./images/Compétences-cibles.png){:width="500px" }
+![Compétences Cibles](./images/Compétences-cibles.png){:width="700px" }
 *Compétences Cibles*
