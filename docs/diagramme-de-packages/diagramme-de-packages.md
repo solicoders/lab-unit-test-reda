@@ -9,3 +9,4 @@ order: 7
 
 ![Diagramme de packages](./images/diagramme-de-packages.jpeg){:width="500px" }
 *Diagramme de packages*
+
