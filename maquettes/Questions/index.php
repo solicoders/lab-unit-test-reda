@@ -52,16 +52,16 @@
                                 <table class="table table-striped text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Titre</th>
-                                            <th>Description</th>
+                                            <th>Question</th>
+                                            <th>Reponse</th>
                                             <th class="text-center">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Projet 1</td>
+                                            <td><?= substr('Quel est le langage utilisé pour définir la structure et le contenu des pages web ?', 0, 50) ?></td>
                                             <td>
-                                                Description du projet 1.
+                                                HTML (HyperText Markup Language)
                                             </td>
                                             <td class="text-center">
                                                 <a href="./show.php" class='btn btn-default btn-sm'>
@@ -72,9 +72,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Projet 2</td>
+                                            <td><?= substr(' Quel langage est utilisé pour styliser les pages web et définir leur présentation visuelle ?', 0, 50) ?></td>
                                             <td>
-                                                Description du projet 2.
+                                                CSS (Cascading Style Sheets)
                                             </td>
                                             <td class="text-center">
                                                 <a href="./show.php" class='btn btn-default btn-sm'>
@@ -85,9 +85,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Projet 3</td>
+                                            <td><?= substr('Quel langage est principalement utilisé pour rendre les pages web interactives et dynamiques ?', 0, 50) ?></td>
                                             <td>
-                                                Description du projet 3.
+                                                JavaScript
                                             </td>
                                             <td class="text-center">
                                                 <a href="./show.php" class='btn btn-default btn-sm'>

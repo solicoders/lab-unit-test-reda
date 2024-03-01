@@ -34,21 +34,22 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="col-sm-12">
-                                        <label for="nom">Nom:</label>
-                                        <p>Projet 1</p>
+                                        <label for="nom">Question:</label>
+                                        <p>Quel langage est principalement utilisé pour rendre les pages web interactives et dynamiques ?</p>
                                     </div>
 
-                                    <!-- Description Field -->
                                     <div class="col-sm-12">
-                                        <label for="description">Description:</label>
-                                        <p>Description du projet 1.</p>
+                                        <label for="description">Options:</label>
+                                        <ul>
+                                            <li>JavaScript</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
                                     </div>
 
-                                    <!-- Description Field -->
                                     <div class="col-sm-12">
-                                        <label for="description">Date:</label>
-                                        <p>Date de début: 11-7-2014</p>
-                                        <p>Date de fin: 11-7-2014</p>
+                                        <label for="description">Reponse:</label>
+                                        <p>JavaScript</p>
                                     </div>
                                 </div>
                             </div>
