@@ -14,6 +14,5 @@ use app\Repository\Tests\TestsRepository;
 */
 
 Route::get('/', function () {
-    $Tests = new TestsRepository();
-    return $Tests->index();
+    return view('welcome');
 });
