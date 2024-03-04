@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Tests;
+use Database\Seeders\tests\TestsSeeder;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,9 +22,6 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        Tests::create([
-            'nom' => "Inscription à Solicode",
-            'description' => "L'inscription à Solicode est la première étape pour rejoindre le centre Solicode"
-        ]);
+        $this->call(TestsSeeder::class);
     }
 }
