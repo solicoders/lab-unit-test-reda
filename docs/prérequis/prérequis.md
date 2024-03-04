@@ -5,6 +5,7 @@ order: 5
 ---
 
 <!-- new slide -->
+
 # Prérequis
 
 <!-- note -->
@@ -13,33 +14,32 @@ Pour réaliser ce Lab, nous avons besoin des prérequis suivants:
 
 <!-- new slide -->
 
-## Les langues de programation
+## MVC
 
-![les langues de programation](./images/les-langues.jpg){:width="500px"}
-*les langues de programation*
+![mvc](./images/mvc.png){:width="500px"}
+*mvc*
 
 <!-- note -->
 
-Vous devriez avoir des connaissances de base en développement web, y compris HTML, CSS, JavaScript et PHP, ainsi qu'une compréhension générale du modèle MVC (Modèle-Vue-Contrôleur) utilisé par Laravel.
+Cela nécessite de savoir comment travailler avec le modèle de conception MVC.
 
 <!-- new slide -->
 
-## Environnement de développement local
+## OOP
   
-![Environnement](./images/apache-php-mysql.jpg){:width="500px"}
-*Environnement*
+![oop](./images/oop.png){:width="500px"}
+*OOP*
 
 <!-- note -->
 
-Pour réaliser cette application, nous devons disposer d'un environnement de développement local configuré sur notre machine.
-Cela inclura un serveur Web Apache, PHP et un SGBD comme MySQL.
+Cela nécessite de connaître 4 principes de la POO.
 
 <!-- new slide -->
 
-## Composer
+## Repository Design Pattern
 
-![Composer](./images/composer.png){:width="500px"}
-*Composer*
+![Repository Design Pattern](./images/repository.jpeg){:width="500px"}
+*Repository Design Pattern*
 
 <!-- note -->
 
@@ -55,17 +55,6 @@ Composer est un gestionnaire de dépendances pour PHP. Laravel utilise Composer 
 <!-- note -->
 
 Nous avons besoin d'un framework php comme laravel pour réaliser ce projet.
-
-<!-- new slide -->
-
-## AdminLTE
-
-![AdminLTE](./images/admin-lte.png){:width="500px"}
-*AdminLTE*
-
-<!-- note -->
-
-Nous devons télécharger AdminLTE dans notre projet Laravel depuis le site officiel d'Admin LTE, ce package servira d'interface utilisateur de notre projet.
 
 <!-- new slide -->
 
