@@ -7,8 +7,9 @@
     <title>Les Tests</title>
 </head>
 
-<body>
-    <?php include_once "../layouts/heade.php" ?>
+<?php include_once "../layouts/heade.php" ?>
+
+<body class="sidebar-mini" style="height: auto;">
     <?php include_once "../layouts/nav.php" ?>
     <?php include_once "../layouts/aside.php" ?>
 
@@ -22,7 +23,7 @@
                     <div class="col-sm-6">
                         <div class="float-sm-right">
                             <a href="./create.php" class="btn btn-info">
-                                <i class="fas fa-plus"></i> Nouveau Question
+                                <i class="fas fa-plus"></i> Ajouter Une Question
                             </a>
                         </div>
 

@@ -4,33 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Tests</title>
+    <title>Modifier la Question</title>
 </head>
 
-<body>
-    <?php include_once "../layouts/heade.php" ?>
-    <?php include_once "../layouts/nav.php" ?>
-    <?php include_once "../layouts/aside.php" ?>
+<?php include_once "../layouts/heade.php" ?>
 
-    <div class="content-wrapper">
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1>Gestion Des Questions</h1>
+<body class="sidebar-mini" style="height: auto;">
+
+    <div class="wrapper">
+        <!-- Navigation -->
+        <?php include_once "../layouts/nav.php" ?>
+        <!-- Barre latérale -->
+        <?php include_once "../layouts/aside.php" ?>
+
+        <div class="content-wrapper" style="min-height: 1302.4px;">
+            <div class="content-header">
+            </div>
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-info">
+                                <div class="card-header">
+                                    <h3 class="card-title"> <i class="nav-icon fas fa-table"></i> Ajouter une Question</h3>
+                                </div>
+                                <?php include_once "./form.php" ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <div class="content">
-            <div class="container-fluid">
-                <?php include_once "./form.php" ?>
-            </div>
+            </section>
         </div>
+
+        <!-- Inclure le pied de page -->
+        <?php include_once "../layouts/footer.php" ?>
+
     </div>
 
-    <?php include_once "../layouts/footer.php" ?>
-    <?php include_once "../layouts/script-link.php"; ?>
+    <!-- Inclure le script -->
+    <?php include_once "../layouts/script-link.php" ?>
 </body>
-
 </html>

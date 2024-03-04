@@ -7,7 +7,7 @@
     <title>Les Tests</title>
 </head>
 
-<body>
+<body class="sidebar-mini" style="height: auto;">
     <?php include_once "../layouts/heade.php" ?>
     <?php include_once "../layouts/nav.php" ?>
     <?php include_once "../layouts/aside.php" ?>

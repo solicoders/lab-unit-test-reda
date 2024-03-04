@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Question</title>
+</head>
+
 <!-- Inclure l'en-tête -->
 <?php include_once "../layouts/heade.php" ?>
 
@@ -21,7 +27,7 @@
                         <div class="col-md-12">
                             <div class="card card-info">
                                 <div class="card-header">
-                                    <h3 class="card-title"> <i class="nav-icon fas fa-table"></i> Modifier le Projet</h3>
+                                    <h3 class="card-title"> <i class="nav-icon fas fa-table"></i> Modifier la Question</h3>
                                 </div>
                                 <?php include_once "./form.php" ?>
                             </div>
