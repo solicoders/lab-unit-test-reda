@@ -1,0 +1,14 @@
+.reveal h1:last-child {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translate(0%, -50%) !important;
+    width: 100% !important;
+}
+
+
+.present{
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+}
