@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\TestsController;
 use Illuminate\Support\Facades\Route;
-use app\Repository\Tests\TestsRepository;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,4 @@ use app\Repository\Tests\TestsRepository;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [TestsController::class, 'index']);
