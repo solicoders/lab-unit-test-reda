@@ -15,7 +15,6 @@ class TestsRepository extends BaseRepository
 
     public function index()
     {
-        $tests = $this->model->index();
-        dd($tests);
+        return $this->model->index();
     }
 }
