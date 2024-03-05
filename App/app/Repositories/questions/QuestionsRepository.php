@@ -3,6 +3,7 @@ namespace App\Repositories\Questions;
 
 use App\Models\Questions\Questions;
 use App\Repositories\BaseRepository;
+use Illuminate\Http\Request;
 
 class QuestionsRepository extends BaseRepository
 {
@@ -17,5 +18,9 @@ class QuestionsRepository extends BaseRepository
         return $this->model->paginate();
     }
 
-    
+    public function create($data, Request $request){
+        $data=$request->validate($data);
+        return $this->model->create($data);
+    }
+
 }

@@ -18,7 +18,6 @@ return new class extends Migration
             $blueprint->rememberToken();
             $blueprint->timestamps();
             $blueprint->foreignId('test_id')->references('id')->on('tests');
-
         });
     }
 
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('questions');
     }
 };
