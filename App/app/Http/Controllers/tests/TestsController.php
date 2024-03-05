@@ -16,6 +16,5 @@ class TestsController extends Controller
     public function index(){
         $tests = $this->TestsRepository->index();
         dd($tests);
-        return view('index', compact('tests'));
     }
 }
