@@ -12,8 +12,8 @@ abstract class BaseRepository
     }
 
 
-    public function index($id)
+    public function index()
     {
-        return $this->model->find($id);
+        return $this->model->paginate();
     }
 }
