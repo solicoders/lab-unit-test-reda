@@ -12,9 +12,4 @@ class TestsRepository extends BaseRepository
         parent::__construct($tests);
     }
 
-
-    public function index()
-    {
-        return $this->model->index();
-    }
 }
