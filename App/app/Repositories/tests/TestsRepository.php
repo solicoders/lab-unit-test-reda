@@ -1,5 +1,5 @@
 <?php
-namespace app\Repository\Tests;
+namespace App\Repositories\Tests;
 
 use App\Models\Tests;
 use BaseRepository;
