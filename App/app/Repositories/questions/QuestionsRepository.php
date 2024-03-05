@@ -18,9 +18,9 @@ class QuestionsRepository extends BaseRepository
         return $this->model->paginate();
     }
 
-    public function create($data, Request $request){
-        $data=$request->validate($data);
-        return $this->model->create($data);
+    public function create($data){
+        return $this->model->store($data);
     }
+
 
 }
