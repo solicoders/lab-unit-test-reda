@@ -22,6 +22,12 @@ class GestionsTests extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $this->call(TestsSeeder::class);
+        $this->call(GestionsTests::Classes());
+    }
+
+    public static function Classes(): array{
+        return [
+            TestsSeeder::class,
+        ];
     }
 }
