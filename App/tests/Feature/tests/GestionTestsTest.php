@@ -27,6 +27,7 @@ class GestionTestsTest extends TestCase
         $TestsRepository = new TestsRepository(new Tests);
 
         $response = count($TestsRepository->index());
+        
         $this->assertGreaterThan(0,$response, 'Message: '.$response);
     }
 
