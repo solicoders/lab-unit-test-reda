@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Tests;
 
+use App\Http\Controllers\Controller;
 use App\Models\Tests;
 use App\Repositories\Tests\TestsRepository;
 use Illuminate\Http\Request;
@@ -13,7 +14,8 @@ class TestsController extends Controller
         $this->TestsRepository = $TestsRepository; 
     }
     public function index(){
-        $this->TestsRepository->index();
+        $tests = $this->TestsRepository->index();
+        dd($tests);
         return view('index', compact('tests'));
     }
 }

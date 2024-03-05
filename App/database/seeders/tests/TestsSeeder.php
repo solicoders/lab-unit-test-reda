@@ -4,7 +4,7 @@ namespace Database\Seeders\tests;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Tests;
+use App\Models\Tests\Tests;
 use Illuminate\Database\Seeder;
 
 class TestsSeeder extends Seeder
