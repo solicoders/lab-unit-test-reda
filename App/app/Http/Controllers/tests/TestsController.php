@@ -14,7 +14,6 @@ class TestsController extends Controller
         $this->TestsRepository = $TestsRepository; 
     }
     public function index(){
-        $tests = $this->TestsRepository->index();
-        dd($tests);
+        $tests = $this->TestsRepository->index(1);
     }
 }

@@ -12,8 +12,8 @@ abstract class BaseRepository
     }
 
 
-    public function index()
+    public function index($id)
     {
-        return $this->model->all()->first();
+        return $this->model->find($id);
     }
 }
