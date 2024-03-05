@@ -14,6 +14,6 @@ abstract class BaseRepository
 
     public function index()
     {
-        return $this->model->paginate();
+        return $this->model->all()->first();
     }
 }
