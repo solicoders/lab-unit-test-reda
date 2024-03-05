@@ -2,16 +2,14 @@
 
 namespace Tests\Unit;
 
-use App\Models\Tests;
 use PHPUnit\Framework\TestCase;
-use app\Repository\Tests\TestsRepository;
 
-class GestionTestsTest extends TestCase
+class ExampleTest extends TestCase
 {
     /**
-     * A basic unit test example.
+     * A basic test example.
      */
-    public function test_showing_tests(): void
+    public function test_that_true_is_true(): void
     {
         $this->assertTrue(true);
     }
