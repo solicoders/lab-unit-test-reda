@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Questions;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\questions\ValidateQuestionData;
 use App\Repositories\Questions\QuestionsRepository;
 use App\Repositories\Tests\TestsRepository;
 use Illuminate\Http\Request;
@@ -33,12 +34,14 @@ class QuestionsController extends Controller
         $tests = $this->TestsRepository->getAll();
         return view('questions.create', compact('tests'));
     }
-    public function store(Request $request)
+    public function store(ValidateQuestionData $validateQuestionData)
     {
-        dd($request->all());
-        $question = $this->QuestionsRepository->store($request->all());
-        return view('questions.index', compact('question'));
-    }
+        $ValidatedData = $validateQuestionData->validated();
+        $AddQuestion = $this->QuestionsRepository->store($ValidatedData);
 
-    
+        if ($AddQuestion) {
+            $questions = $this->QuestionsRepository->paginatedData(5);
+        }
+        return view('questions.index', compact('questions'));
+    }
 }

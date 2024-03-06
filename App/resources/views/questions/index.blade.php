@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="float-sm-right">
-                        <a href="./create.php" class="btn btn-info">
+                        <a href="{{ route('questions.create') }}" class="btn btn-info">
                             <i class="fas fa-plus"></i> Ajouter Une Question
                         </a>
                     </div>
