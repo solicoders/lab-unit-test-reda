@@ -1,4 +1,5 @@
-<form action="{{ !isset($data->id) ? route('questions.store') : route('questions.update') }}" method="POST">
+<form action="{{ !isset($question->id) ? route('questions.store') : route('questions.update', $question->id) }}"
+    method="POST">
     @csrf
     <div class="card-body">
         <div class="form-group">
@@ -6,7 +7,7 @@
             <select name="test_id" class="form-control">
                 <option value="default">Choisissez le test</option>
                 @foreach ($tests as $test)
-                    <option value="{{ $test->id }}" {{ $tests->id == $test->id ? 'selected' : '' }}>
+                    <option value="{{ $test->id }}" {{ $question->test_id == $test->id ? 'selected' : '' }}>
                         {{ $test->nom }}</option>
                 @endforeach
             </select>
@@ -18,7 +19,8 @@
         <div class="form-group">
             <label for="inputDescription">Question</label>
             <div class="d-flex">
-                <input name="question" class="form-control" placeholder="Entrez la description">
+                <input value="{{ $question->question }}" name="question" class="form-control"
+                    placeholder="Entrez la description">
             </div>
             @error('question')
                 <p class="text-danger"> {{ $message }} </p>
@@ -28,7 +30,8 @@
         <div class="form-group">
             <label for="inputDescription">Reponse</label>
             <div class="d-flex mb-1">
-                <input name="reponse" class="form-control" id="" placeholder="Entrez la Reponse">
+                <input value="{{ $question->reponse }}" name="reponse" class="form-control" id=""
+                    placeholder="Entrez la Reponse">
             </div>
             @error('reponse')
                 <p class="text-danger"> {{ $message }} </p>
@@ -36,7 +39,9 @@
         </div>
         <div class="d-flex">
             <a href="{{ route('questions.index') }}" class="btn btn-default">Annuler</a>
-            <button type="submit" class="btn btn-info ml-2">Ajouter</button>
+            <button type="submit" class="btn btn-info ml-2">
+                {{ !isset($question->id) ? 'Ajouter' : 'Modifier' }}
+            </button>
         </div>
     </div>
 

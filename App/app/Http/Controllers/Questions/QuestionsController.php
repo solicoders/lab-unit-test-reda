@@ -44,8 +44,14 @@ class QuestionsController extends Controller
 
     public function edit($id)
     {
-        $tests = $this->TestsRepository->find($id);
+        $tests = $this->TestsRepository->getAll();
         $question = $this->QuestionsRepository->find($id);
         return view('questions.edit', compact('question', 'tests'));
+    }
+
+    public function update(ValidateQuestionData $validateQuestionData, $id)
+    {
+        $this->QuestionsRepository->update($id, $validateQuestionData->all());
+        return redirect()->route('questions.index')->with('success', 'Question Modifier Avec Reussir');
     }
 }
