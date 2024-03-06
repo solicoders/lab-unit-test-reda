@@ -16,4 +16,7 @@ class TestsRepository extends BaseRepository
     public function index(){
         return $this->model->paginate();
     }
+    public function getAll(){
+        return $this->model->all();
+    }
 }
