@@ -21,4 +21,8 @@ class QuestionsRepository extends BaseRepository
     public function find($id){
         return $this->model->find($id);
     }
+
+    public function getAll(){
+        return $this->model->all();
+    }
 }
