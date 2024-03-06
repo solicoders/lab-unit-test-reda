@@ -22,7 +22,7 @@ class ValidateQuestionData extends FormRequest
     public function rules(): array
     {
         return [
-            'test_id' => 'required',
+            'test_id' => 'required |numeric',
             'question' => 'required| min:5 | max:255',
             'reponse' => 'required| min:5 | max:255',
         ];

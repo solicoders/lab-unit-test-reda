@@ -22,14 +22,14 @@
                             <i class="fas fa-plus"></i> Ajouter Une Question
                         </a>
                     </div>
-                    @if (session('success'))
-                    <div class="alert alert-success alert-dismissible">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                        {{ session('success') }}.
-                    </div>
-                @endif
                 </div>
             </div>
+            @if (session('success'))
+                <div class="alert alert-success alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    {{ session('success') }}.
+                </div>
+            @endif
         </div>
     </div>
     <section class="content">
@@ -72,7 +72,8 @@
                                                     class='btn btn-default btn-sm'>
                                                     <i class="far fa-eye"></i>
                                                 </a>
-                                                <a href="{{ route('questions.edit', $question->id) }}" class="btn btn-sm btn-default"><i
+                                                <a href="{{ route('questions.edit', $question->id) }}"
+                                                    class="btn btn-sm btn-default"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <button type="button" class="btn btn-sm btn-danger"><i
                                                         class="fa-solid fa-trash"></i></button>

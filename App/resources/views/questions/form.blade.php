@@ -7,7 +7,8 @@
             <select name="test_id" class="form-control">
                 <option value="default">Choisissez le test</option>
                 @foreach ($tests as $test)
-                    <option value="{{ $test->id }}" {{ $question->test_id == $test->id ? 'selected' : '' }}>
+                    <option value="{{ $test->id }}"
+                        {{ isset($question->id) && $question->test_id == $test->id ? 'selected' : '' }}>
                         {{ $test->nom }}</option>
                 @endforeach
             </select>
@@ -19,8 +20,8 @@
         <div class="form-group">
             <label for="inputDescription">Question</label>
             <div class="d-flex">
-                <input value="{{ $question->question }}" name="question" class="form-control"
-                    placeholder="Entrez la description">
+                <input value="{{ isset($question->question) ? $question->question : '' }}" name="question"
+                    class="form-control" placeholder="Entrez la description">
             </div>
             @error('question')
                 <p class="text-danger"> {{ $message }} </p>
@@ -30,8 +31,8 @@
         <div class="form-group">
             <label for="inputDescription">Reponse</label>
             <div class="d-flex mb-1">
-                <input value="{{ $question->reponse }}" name="reponse" class="form-control" id=""
-                    placeholder="Entrez la Reponse">
+                <input value="{{ isset($question->reponse) ? $question->reponse : '' }}" name="reponse"
+                    class="form-control" id="" placeholder="Entrez la Reponse">
             </div>
             @error('reponse')
                 <p class="text-danger"> {{ $message }} </p>

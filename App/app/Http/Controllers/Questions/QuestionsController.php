@@ -39,7 +39,7 @@ class QuestionsController extends Controller
         $ValidatedData = $validateQuestionData->validated();
         $this->QuestionsRepository->store($ValidatedData);
 
-        return redirect()->route('questions.index')->with('success', 'Question Ajouter Avec Reussir');
+        return redirect()->route('questions.index')->with('success', 'Question ajoutée avec succès.');
     }
 
     public function edit($id)
@@ -52,6 +52,6 @@ class QuestionsController extends Controller
     public function update($id, ValidateQuestionData $validateQuestionData)
     {
         $this->QuestionsRepository->update($validateQuestionData->all(),$id);
-        return redirect()->route('questions.index')->with('success', 'Question Modifier Avec Reussir');
+        return redirect()->route('questions.index')->with('success', 'Question modifiée avec succès.');
     }
 }
