@@ -20,5 +20,3 @@ Route::get('/', function () {
 
 
 Route::get('/tests', [TestsController::class, 'index'])->name('tests.index');
-Route::get('/tests/show/{id}', [TestsController::class, 'index'])->name('tests.show');
-Route::get('/questions', [TestsController::class, 'index'])->name('questions.index');
