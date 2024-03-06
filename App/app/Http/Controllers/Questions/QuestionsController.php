@@ -39,9 +39,13 @@ class QuestionsController extends Controller
         $ValidatedData = $validateQuestionData->validated();
         $AddQuestion = $this->QuestionsRepository->store($ValidatedData);
 
-        if ($AddQuestion) {
-            $questions = $this->QuestionsRepository->paginatedData(5);
-        }
+        $questions = $this->QuestionsRepository->paginatedData(5);
         return view('questions.index', compact('questions'));
+    }
+
+    public function edit($id)
+    {
+        $question = $this->QuestionsRepository->find($id);
+        return view('questions.edit', compact('question'));
     }
 }

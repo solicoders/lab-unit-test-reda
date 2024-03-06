@@ -58,16 +58,16 @@
                                 <tbody>
                                     @foreach ($questions as $question)
                                         <tr>
-                                            <td>{{ $question->question }}</td>
+                                            <td>{{ Str::limit($question->question, 45) }}</td>
                                             <td>
-                                                {{ $question->reponse }}
+                                                {{ Str::limit($question->reponse, 45) }}
                                             </td>
                                             <td class="text-center">
                                                 <a href="{{ route('questions.show', $question->id) }}"
                                                     class='btn btn-default btn-sm'>
                                                     <i class="far fa-eye"></i>
                                                 </a>
-                                                <a href="./edit.php" class="btn btn-sm btn-default"><i
+                                                <a href="{{ route('questions.edit', $question->id) }}" class="btn btn-sm btn-default"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <button type="button" class="btn btn-sm btn-danger"><i
                                                         class="fa-solid fa-trash"></i></button>

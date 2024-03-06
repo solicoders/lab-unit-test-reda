@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modifier la Question</title>
+    <title>Ajouter une Question</title>
 </head>
 
 @extends('layouts.layout')
