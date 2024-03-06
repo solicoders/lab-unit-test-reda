@@ -28,3 +28,4 @@ Route::get('/question/create', [QuestionsController::class, 'create'])->name('qu
 Route::post('/question/store', [QuestionsController::class, 'store'])->name('questions.store');
 Route::get('/question/edit/{id}', [QuestionsController::class, 'edit'])->name('questions.edit');
 Route::post('/question/update/{id}', [QuestionsController::class, 'update'])->name('questions.update');
+Route::delete('/question/destroy/{id}', [QuestionsController::class, 'destroy'])->name('questions.destroy');

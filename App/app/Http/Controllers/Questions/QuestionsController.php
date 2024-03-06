@@ -54,4 +54,10 @@ class QuestionsController extends Controller
         $this->QuestionsRepository->update($validateQuestionData->all(),$id);
         return redirect()->route('questions.index')->with('success', 'Question modifiée avec succès.');
     }
+    public function destroy($id)
+    {
+        $this->QuestionsRepository->destroy($id);
+        return redirect()->route('questions.index')->with('success', 'Question suprimeé avec succès.');
+    }
+    
 }
