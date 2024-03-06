@@ -37,15 +37,15 @@ class QuestionsController extends Controller
     public function store(ValidateQuestionData $validateQuestionData)
     {
         $ValidatedData = $validateQuestionData->validated();
-        $AddQuestion = $this->QuestionsRepository->store($ValidatedData);
+        $this->QuestionsRepository->store($ValidatedData);
 
-        $questions = $this->QuestionsRepository->paginatedData(5);
-        return view('questions.index', compact('questions'));
+        return redirect()->route('questions.index')->with('success', 'Question Ajouter Avec Reussir');
     }
 
     public function edit($id)
     {
+        $tests = $this->TestsRepository->find($id);
         $question = $this->QuestionsRepository->find($id);
-        return view('questions.edit', compact('question'));
+        return view('questions.edit', compact('question', 'tests'));
     }
 }

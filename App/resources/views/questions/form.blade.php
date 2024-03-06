@@ -4,9 +4,10 @@
         <div class="form-group">
             <label for="inputNom">Test</label>
             <select name="test_id" class="form-control">
-                <option value="default" disabled selected>Choisissez le test</option>
+                <option value="default">Choisissez le test</option>
                 @foreach ($tests as $test)
-                    <option value="{{ $test->id }}">{{ $test->nom }}</option>
+                    <option value="{{ $test->id }}" {{ $tests->id == $test->id ? 'selected' : '' }}>
+                        {{ $test->nom }}</option>
                 @endforeach
             </select>
             @error('test_id')
