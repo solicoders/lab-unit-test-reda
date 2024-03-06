@@ -18,5 +18,7 @@ class QuestionsRepository extends BaseRepository
         return $this->model->paginate();
     }
 
-
+    public function find($id){
+        return $this->model->find($id);
+    }
 }
