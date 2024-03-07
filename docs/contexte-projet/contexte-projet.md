@@ -6,14 +6,14 @@ order: 4.5
 
 <!-- new slide -->
 
-# Contexte du projet
+# Contexte
 
-<!-- new slide -->
+<!-- new slide  -->
 
-## Analyse technique
+## Contexte du projet
 
-![Analyse-technique](./images/analyse.jpeg){:width="700px"}*Analyse technique*
+![Contexte du projet](./images/analyse.jpeg){:width="700px"}*Contexte du projet*
 
 <!-- note -->
 
-Pour réaliser ce laboratoire, nous devons faire une analyse technique, qui fait partie de la Branch Technique.
+Le but de ce lab est de valider les compétences requises
