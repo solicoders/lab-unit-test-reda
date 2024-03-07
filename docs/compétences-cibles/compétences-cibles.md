@@ -16,4 +16,5 @@ Ce lab cible les compétences suivantes:
 
 - **C2 Base de données :** Manipuler une base de données - perfectionnement.
 - **C3 Back end :** Développer la partie back-end d’une application web ou web mobile - perfectionnement.
+- **C4. Collaboration:** Collaborer à la gestion d’un projet informatique et à l’organisation de l’environnement de développement - perfectionnement
 - **C6 Test :** Préparer et exécuter les plans de tests d’une application.
