@@ -1,7 +1,7 @@
 <?php
 namespace App\Repositories\Tests;
 
-use App\Models\Tests\Tests;
+use App\Models\tests\Tests;
 use App\Repositories\BaseRepository;
 
 class TestsRepository extends BaseRepository
