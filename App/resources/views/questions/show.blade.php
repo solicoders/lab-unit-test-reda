@@ -9,7 +9,7 @@
                     <h1>Détails du Question</h1>
                 </div>
                 <div class="col-sm-6">
-                    <a href="./edit.php" class="btn btn-default float-right"><i class="far fa-edit"></i> Modifier</a>
+                    <a href="{{ route('questions.edit', $question->id) }}" class="btn btn-default float-right"><i class="far fa-edit"></i> Modifier</a>
                 </div>
             </div>
         </div>
