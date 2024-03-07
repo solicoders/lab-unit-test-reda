@@ -25,4 +25,5 @@ class QuestionsRepository extends BaseRepository
     public function getAll(){
         return $this->model->all();
     }
+    
 }
